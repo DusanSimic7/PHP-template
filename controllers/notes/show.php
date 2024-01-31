@@ -5,7 +5,7 @@ use Core\Database;
 
 $db = App::resolve(Database::class);
 
-$currentUserId = 1;
+$currentUserId = 11;
 
 
 

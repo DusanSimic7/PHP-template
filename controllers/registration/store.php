@@ -48,13 +48,11 @@ if($user){
     $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
 
         'email' => $email,
-        'password' => $password
+        'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
     // mark that user has logged in.
-    $_SESSION['user'] = [
-        'email' => $email
-    ];
+    login(['email' => $email]);
 
     header('location: /');
     exit();
