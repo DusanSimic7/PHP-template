@@ -29,6 +29,7 @@ $db->query('INSERT INTO notes(body, user_id) VALUES(:body, :user_id)', [
 
 ]);
 
+
 header('location: /notes');
 die();
 
