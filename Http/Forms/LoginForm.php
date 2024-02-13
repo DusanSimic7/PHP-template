@@ -40,8 +40,8 @@ class LoginForm
 
     public function throw()
     {
-        ValidationException::throw($this->errors(), $this->attributes);
 
+        ValidationException::throw($this->errors(), $this->attributes);
     }
 
 

@@ -1,0 +1,17 @@
+{
+    "name": "simke777/laracast",
+    "authors": [
+        {
+            "name": "Dusan Simic",
+            "email": "dusansimic202@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+
+        }
+    }
+}
