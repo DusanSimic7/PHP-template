@@ -6,12 +6,22 @@
             "email": "dusansimic202@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/collections": "^10.43"
+    },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
             "Http\\": "Http/"
 
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.33"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     }
 }
