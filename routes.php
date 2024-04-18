@@ -1,5 +1,8 @@
 <?php
 
+$router->get('/migrations', 'migrations.php');
+
+
 $router->get('/', 'index.php');
 $router->get('/about', 'about.php');
 $router->get('/contact', 'contact.php');
